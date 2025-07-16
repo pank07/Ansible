@@ -30,7 +30,7 @@ ad hoc commands are great for tasks you repeat rarely.
 ansible servers -a "free -h"
 ```
 -Ansible modules are units of code that can control system resource or execute system commands
-eg. -m is used for modules ansible all -m ping -u ubuntu
+-eg. -m is used for modules ansible all -m ping -u ubuntu
 ```bash
 ansible servers -m ping
 ```
