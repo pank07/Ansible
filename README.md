@@ -9,6 +9,7 @@ sudo apt update
 sudo apt install ansible
 ```
 ```bash
+-Update host file of ansible
 sudo vim /etc/ansible/hosts
 ansible-inventory --list -y
 ```
