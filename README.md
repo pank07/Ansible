@@ -1,7 +1,7 @@
 # Installation of Ansible
 - Add reposiotory
 ```bash
-sudo apt-add- repository ppa:ansible/ansible
+sudo apt-add-repository ppa:ansible/ansible
 sudo apt update
   ```
 - Install ansible
