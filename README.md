@@ -23,3 +23,13 @@ anisble_python_interpreter=/usr/bin/python3
 ansible_user=ubuntu
 ansible_ssh_private_key_file=/<file>
 ```
+-Ansible Adhoc commands vs modules
+ad hoc commands are great for tasks you repeat rarely.
+-a is used for adhoc commands ansible all -a "df -h" -u ubuntu ansible servers -a "uptime" -ubuntu
+```bash
+ansible servers -a "free -h"
+```
+
+```bash
+ansible servers -m ping
+```
