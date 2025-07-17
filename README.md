@@ -59,3 +59,19 @@ service:
 state: started
 enabled: yes
 ```
+-Ansible playbooks with conditional statements
+```bash
+name: this is will install based on os
+hosts: servers
+become: yes
+tasks:
+- name: install docker
+ apt:
+   name: docker.io
+   state: latest
+-name: install aws cli
+apt:
+  name: awscli
+  state: latest
+when: ansible_distribution== 'Debian' or ansible_distribution== 'Ubuntu'
+```
