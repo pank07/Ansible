@@ -46,19 +46,22 @@ tasks:
 ```
 - Anisble Playbooks to install tools
 ```bash
-name: This playbook will install nginx
-hosts: servers
-becomes: yes
-tasks:
-- name: install nginx
-apt:
- name: nginx
- state: latest
-- name: start nginx
-service:
- name: nginx
-state: started
-enabled: yes
+-
+ name: Install nginx and start it
+ hosts: servers
+ become: yes
+ tasks:
+ - name: install nginx
+   apt:
+     name: nginx
+     state: latest
+
+ - name: start nginx
+   service:
+     name: nginx
+     state: started
+     enabled: yes
+
 ```
 - Ansible playbooks with conditional statements
 ```bash
