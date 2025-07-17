@@ -1,4 +1,4 @@
-# Installation of Ansible
+# Ansible commands and playbooks
 - Add reposistory
 ```bash
 sudo apt-add-repository ppa:ansible/ansible
