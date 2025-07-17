@@ -79,3 +79,26 @@ apt:
   state: latest
 when: ansible_distribution== 'Debian' or ansible_distribution== 'Ubuntu'
 ```
+- Deplying static web page by ansible playbook
+```bash
+-
+ name:  Install nginx and server static website
+ hosts: production
+ become: yes
+ tasks:
+   - name: Inatall nginx
+     apt:
+       name: nginx
+       state: latest
+
+   - name: Start nginx
+     service:
+       name: nginx
+       state: started
+       enabled: yes
+
+   - name: Deploy web page
+     copy:
+       src: index.html
+       dest: /var/www/html
+``` 
