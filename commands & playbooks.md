@@ -102,3 +102,26 @@ when: ansible_distribution== 'Debian' or ansible_distribution== 'Ubuntu'
        src: index.html
        dest: /var/www/html
 ``` 
+- installation_apache.yml
+```bash
+---
+- name: Install Apache on Web Servers
+  hosts: webservers
+  become: true
+
+  tasks:
+    - name: Update APT package list (for Debian/Ubuntu)
+      apt:
+        update_cache: yes
+
+    - name: Install Apache
+      apt:
+        name: apache2
+        state: present
+
+    - name: Ensure Apache is started
+      service:
+        name: apache2
+        state: started
+        enabled: true
+```
