@@ -30,12 +30,12 @@ ad hoc commands are great for tasks you repeat rarely.
 ```bash
 ansible servers -a "free -h"
 ```
--Ansible modules are units of code that can control system resource or execute system commands
+- Ansible modules are units of code that can control system resource or execute system commands
 -eg. -m is used for modules ansible all -m ping -u ubuntu
 ```bash
 ansible servers -m ping
 ```
--Ansible palybooks
+- Ansible palybooks
 ```bash
 name: Date playbook
 hosts: servers
@@ -43,7 +43,7 @@ tasks:
  - name: this will show the date
  - command: date
 ```
--Anisble Playbooks to install tools
+- Anisble Playbooks to install tools
 ```bash
 name: This playbook will install nginx
 hosts: servers
@@ -59,7 +59,7 @@ service:
 state: started
 enabled: yes
 ```
--Ansible playbooks with conditional statements
+- Ansible playbooks with conditional statements
 ```bash
 name: this is will install based on os
 hosts: servers
