@@ -36,7 +36,7 @@ ansible servers -a "free -h"
 ```bash
 ansible servers -m ping
 ```
-- Ansible palybooks
+- Ansible playbooks
 ```bash
 name: Date playbook
 hosts: servers
@@ -46,6 +46,10 @@ tasks:
 ```
 - Anisble Playbooks to install tools
 ```bash
+- Run ansible playbook
+'''bash
+ansible-playbook <name_of_playbook.yml>
+'''
 -
  name: Install nginx and start it
  hosts: servers
