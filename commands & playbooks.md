@@ -46,9 +46,9 @@ tasks:
 ```
 
 - Run ansible playbook
-'''bash
+```bash
 ansible-playbook <name_of_playbook.yml>
-'''
+```
 - Anisble Playbooks to install tools
 ```bash
 -
