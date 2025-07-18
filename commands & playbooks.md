@@ -44,12 +44,13 @@ tasks:
  - name: this will show the date
  - command: date
 ```
-- Anisble Playbooks to install tools
-```bash
+
 - Run ansible playbook
 '''bash
 ansible-playbook <name_of_playbook.yml>
 '''
+- Anisble Playbooks to install tools
+```bash
 -
  name: Install nginx and start it
  hosts: servers
