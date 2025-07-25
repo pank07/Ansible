@@ -3,8 +3,7 @@
 
 - Ansible-inveentory lists
 <img width="1366" height="768" alt="Anisble-inventory lists" src="https://github.com/user-attachments/assets/f88fd969-a0b5-4320-91d4-5b791ccb3dc4" />
-- Ansible playbook of time
-<img width="1366" height="768" alt="Ansible playbook of time" src="https://github.com/user-attachments/assets/c77c7284-51be-4baa-89d8-47e3c19cf976" />
+
 
 - hosting servers by ansible host file
 <img width="1366" height="768" alt="Hosting servers by Ansible" src="https://github.com/user-attachments/assets/ae59f669-9b64-4fe4-a727-316f283d79af" />
